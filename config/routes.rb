@@ -1,4 +1,5 @@
 Rails.application.routes.draw do
+  root 'ajax#keywd'
   get 'ajax/keywd'
 
   # The priority is based upon order of creation: first created ->
