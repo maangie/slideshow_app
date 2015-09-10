@@ -1,6 +1,7 @@
 <%= form_tag({ action: :search_slide }, id: 'slide_search', remote: true) do %>
   <%= text_field_tag :keywd, '', size: 30 %>
   <%= submit_tag '検索' %>
+  <span id="progress"></span>
 <% end %>
 
 <ul id="result"></ul>

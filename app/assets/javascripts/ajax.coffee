@@ -3,6 +3,11 @@
 # You can use CoffeeScript in this file: http://coffeescript.org/
 
 init = ->
+  $(document).ajaxStart ->
+    $('#progress').html '通信中...'
+  .ajaxComplete ->
+    $('#progress').html ''
+
   $('#slide_search').on 'ajax:success', (e, data) ->
     $('#result').empty()
 
