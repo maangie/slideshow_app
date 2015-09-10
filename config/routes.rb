@@ -1,6 +1,7 @@
 Rails.application.routes.draw do
   root 'ajax#keywd'
   get 'ajax/keywd'
+  post 'ajax/search_slide'
 
   # The priority is based upon order of creation: first created ->
   # highest priority.

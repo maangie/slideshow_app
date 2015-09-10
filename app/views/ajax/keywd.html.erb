@@ -1,2 +1,6 @@
-<h1>Ajax#keywd</h1>
-<p>Find me in app/views/ajax/keywd.html.erb</p>
+<%= form_tag({ action: :search_slide }, id: 'slide_search', remote: true) do %>
+  <%= text_field_tag :keywd, '', size: 30 %>
+  <%= submit_tag '検索' %>
+<% end %>
+
+<ul id="result"></ul>
